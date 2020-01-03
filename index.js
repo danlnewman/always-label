@@ -19,7 +19,7 @@ async function run() {
         throw new Error("label-name and milestone-name cannot both be set");
     }
 
-    var found = false;
+    var found = true;
     if(labelName){
         context.payload.issue.labels.forEach(function(item){
             if(labelName == item.name){
